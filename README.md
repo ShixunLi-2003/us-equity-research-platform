@@ -35,6 +35,7 @@ This is a bar-based simulator, not an exchange order book or an HFT matching eng
 ## Reading paths
 
 - Quantitative development: [architecture](docs/ARCHITECTURE.md), C++ account implementation, native wrapper and tests.
+- Broker boundary (Alpaca paper trading): `broker/client.py`, `broker/paper.py`, `broker/probe.py` — fail-closed, deterministic order IDs and idempotent submission.
 - Quantitative research: [methodology](docs/RESEARCH.md), label isolation tests and [research record](docs/RESEARCH_RECORD.md).
 - Operational engineering: [failure analysis](docs/OPERATIONS.md), [data contract](docs/DATA.md).
 - 中文说明与求职使用：[中文指南](docs/README_CN.md).
@@ -49,4 +50,4 @@ Future extensions: portable point-in-time financial adapter; full execution-awar
 
 ## Data and licensing
 
-No proprietary market data or credentials are included. Obtain your own data and verify its redistribution permissions. No blanket open-source license is assigned in this staging release: confirm authorship and third-party rights before selecting a license. Public hosting alone does not grant reuse rights.
+No proprietary market data or credentials are included. Obtain your own data and verify its redistribution permissions. Licensed under the MIT License; see [LICENSE](LICENSE).
